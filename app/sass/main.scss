@@ -1,0 +1,192 @@
+@import "./fonts.css";
+@import "./reset.css";
+@import '../../node_modules/swiper/swiper-bundle.css';
+
+.header {
+    position: fixed;
+    top: 28px;
+    left: 0;
+    width: 100%;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__logo {
+    }
+
+    &__logo-link {
+    }
+
+    &__logo-pic {
+    }
+
+    &__nav {
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        font-family: "Montserrat-regular";
+        margin-right: 55px;
+        color: white;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-decoration: none;
+        &:hover {
+            color: yellow;
+            padding-bottom: 11px;
+            border-bottom: yellow solid 2px;
+        }
+    }
+
+    &__basket {
+        margin-right: 40px;
+    }
+
+    &__search {
+    }
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.wrapper-nav {
+    display: flex;
+}
+.img-basket {
+}
+.img-search {
+}
+.main {
+}
+.intro {
+    height: 100vh;
+    background: url(../images/dest/background.png) center no-repeat;
+    background-size: cover;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 28vh;
+    }
+
+    &__title {
+        color: #ffffff;
+        font-family: "KaushanScript-Regular";
+    }
+
+    &__subtitle {
+        color: #ffffff;
+        font-family: "Montserrat-bold";
+        margin-bottom: 71px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__underline {
+        width: 60px;
+        height: 3px;
+        background-color: #ffffff;
+        border: none;
+    }
+
+    &__button {
+        color: #ffffff;
+        font-family: "Montserrat-bold";
+        font-size: 14px;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 3px solid #ffffff;
+        padding: 15px 32px;
+        line-height: 11px;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.menu {
+    &__block {
+    }
+
+    &__underline {
+        width: 280px;
+        height: 3px;
+        background-color: #ffffff;
+        border: none;
+        margin-bottom: 25px;
+    }
+
+    &__hr {
+        width: 70px;
+        height: 3px;
+        background-color: #f38181;
+        border: none;
+        margin: 0;
+    }
+
+    &__name {
+        color: #ffffff;
+        font-family: "Montserrat-regular";
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    &__number {
+        font-family: "Montserrat-Bold";
+        font-size: 24px;
+    }
+}
+
+// Адаптивность h1
+
+@media (min-height: 340px) and (max-height: 1100px) {
+    .intro__title {
+        font-size: calc(10px + (72 - 10) * ((100vh - 340px) / (1100 - 340)));
+    }
+    .intro__title {
+        margin-bottom: calc(10px + (42 - 10) * ((100vh - 340px) / (1100 - 340)));
+    }
+}
+
+// Адаптивность Subtitle
+
+@media (min-height: 340px) and (max-height: 1100px) {
+    .intro__subtitle {
+        font-size: calc(20px + (150 - 20) * ((100vh - 340px) / (1100 - 340)));
+    }
+    .intro__subtitle {
+        margin-bottom: calc(15px + (71 - 15) * ((100vh - 340px) / (1100 - 340)));
+    }
+}
+
+// Адаптивность hr
+
+@media (min-height: 340px) and (max-height: 1100px) {
+    .intro__underline {
+        margin-bottom: calc(10px + (50 - 10) * ((100vh - 340px) / (1100 - 340)));
+    }
+}
+
+// Адаптивность button
+
+@media (min-height: 340px) and (max-height: 1100px) {
+    .intro__button {
+        margin-bottom: calc(30px + (157 - 30) * ((100vh - 340px) / (1100 - 340)));
+    }
+}
+
+
+
+
+
